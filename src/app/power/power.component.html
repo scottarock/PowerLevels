@@ -1,18 +1,26 @@
 <section>
   <fieldset>
     <legend>PowerComponent</legend>
-    <form (submit)="calculate()">
-      <label for="initialPower">Initial Power Level</label>
-      <input
-        type="number"
-        id="initialPower"
-        name="initialPower"
-        min="1"
-        max="100"
-        [(ngModel)]="basePower"
-      >
-      <button>Calculate Powers</button>
-    </form>
-    <img src="../assets/saiyan.jpg" alt="saiyan warrior">
+    <div>
+      <form (submit)="calculate()">
+        <label for="initialPower">Initial Power Level</label>
+        <input
+          type="number"
+          id="initialPower"
+          name="initialPower"
+          min="1"
+          max="100"
+          [(ngModel)]="powerInput"
+        >
+        <button>Calculate Powers</button>
+      </form>
+      <img src="../assets/saiyan.jpg" alt="saiyan warrior">
+    </div>
+    <app-power-level
+      *ngFor="let level of powerLevels"
+      [powerLevel]="level"
+      [basePower]="basePower"
+    >
+    </app-power-level>
   </fieldset>
 </section>

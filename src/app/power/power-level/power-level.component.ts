@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-power-level',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./power-level.component.css']
 })
 export class PowerLevelComponent implements OnInit {
+
+  @Input() powerLevel;
+  @Input() basePower;
 
   constructor() { }
 
