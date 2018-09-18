@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Avenir, sans-serif;
+}
+
+fieldset {
+  padding: 20px 25px;
+}
+
+form {
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+  padding: 4px 10px;
+}
+
+input {
+  width: 50px;
+  margin-right: 10px;
+  padding: 4px 0px 4px 10px;
+  font-size: 1em;
+  text-align: right;
+}
+
+button {
+  padding: 4px 10px;
+  font-size: 1em;
+  background-color: gainsboro;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+img {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
